@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="tConsignmentStock" alias="tConsignmentStock" created="2016-08-24T15:12:51" modified="2016-08-24T15:13:10" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="Customer" parentTableSchema="dbo" parentTableName="tCustomer" x="346" y="20">
+      <foreignKeyColumn columnName="CustomerID" parentColumnName="CustomerID" />
+    </foreignKey>
+    <foreignKey id="CustomerCompany" parentTableSchema="dbo" parentTableName="tCompany" baseForeignKey="Customer" x="640" y="20">
+      <foreignKeyColumn columnName="CompanyID" parentColumnName="CompanyID" />
+    </foreignKey>
+    <foreignKey id="Product" parentTableSchema="dbo" parentTableName="tProduct" x="346" y="203">
+      <foreignKeyColumn columnName="ProductID" parentColumnName="ProductID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column fieldName="ConsignmentStockID" name="ConsignmentStockID" label="Consignment Stock ID" />
+    <column fieldName="CustomerID" name="CustomerID" label="Customer ID" aliasColumnName="CustomerCode" aliasForeignKey="Customer" />
+    <column fieldName="CustomerCode" name="CustomerCode" label="Customer Code" foreignKey="Customer" />
+    <column fieldName="CustomerCompanyName" name="CompanyName" label="Customer Company Name" foreignKey="CustomerCompany" />
+    <column fieldName="PacketNo" name="PacketNo" label="Packet No" />
+    <column fieldName="ProductID" name="ProductID" label="Product ID" aliasColumnName="ProductCode" aliasForeignKey="Product" />
+    <column fieldName="ProductCode" name="ProductCode" label="Product Code" foreignKey="Product" />
+    <column fieldName="Pieces" name="Pieces" label="Pieces" />
+    <column fieldName="Cube" name="Cube" label="Cube" />
+    <column fieldName="Area" name="Area" label="Area" />
+    <column fieldName="Lineal" name="Lineal" label="Lineal" />
+  </columns>
+</dataModel>

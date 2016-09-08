@@ -1,0 +1,69 @@
+<!-- 
+  This file is provided to store the settings for your Data Aquarium project. 
+  You can safely delete this file if no further code generation is planned.
+-->
+<project compatibility="20111118" dataModel="required" subscriptionLevel="Unlimited" name="Test2" prettyName="Test 2" type="Web Site Factory" codeDomProvider="VisualBasic" targetFramework="4.6" userInterface="TouchUI" pageImplementation="html" sourceControl="git" xmlns="urn:schemas-codeontime-com:data-aquarium-project">
+  <connectionString hostDatabaseSharing="false" sessionStateMode="None">Data Source=localhost;Initial Catalog=TimberSmartWebPortal;Persist Security Info=True;User ID=timbersmartwebcustomer;Password=t1mber;</connectionString>
+  <providerName>System.Data.SqlClient</providerName>
+  <namespace>MyCompany</namespace>
+  <webServer run="true" port="22349">
+    <webConfig></webConfig>
+  </webServer>
+  <features useSaveAndNew="true" pageHeader="" copyright="" annotations="false" annotationsPath="" newColumn="true" floating="false" maxGridFields="100" multiSelect="false" batchEdit="false" advancedSearch="false" advancedLookup="false" relationshipExplorer="false" enablePermalinks="false" enableHistory="false" enableTransactions="false" showModalForms="true" tabViewSelection="0">
+    <navigation detectUnderscoreSeparatedSchema="" />
+    <blob allowUploadOnInsert="true" />
+    <framework scriptOnly="true" useExtenders="false" />
+    <grid actionColumn="false" />
+    <touch desktopDisplayDensity="Condensed" mobileDisplayDensity="Auto" transitions="" sidebar="Landscape" labelsInForm="AlignedLeft" buttonShapes="true" labelsInList="DisplayedBelow" initialListMode="SeeAll" promoteActions="true" mapApiIdentifier="" />
+    <cms searchEngine="" analysisEngine="" analysisOnDataPages="false" />
+    <ease urlHashing="false">
+      <auditing></auditing>
+    </ease>
+    <packageProperties></packageProperties>
+    <smtp deliveryMethod="Network" deliveryFormat="" from="" clientDomain="" targetName="" host="" port="" defaultCredentials="true" enableSsl="false" username="" password="" />
+  </features>
+  <reports enabled="true" />
+  <host path="" url="" />
+  <databaseObjectFilter generate="ControllersAndPages"></databaseObjectFilter>
+  <bll normalizeModelNames="true" discoveryDepth="3" labelFormatExpression="" selectMethod="Select" selectSingleMethod="SelectSingle" insertMethod="Insert" updateMethod="Update" deleteMethod="Delete" generateSharedBusinessRules="false" includeViews="true" tabViewSelection="0">
+    <fieldMap></fieldMap>
+    <keys></keys>
+    <fieldsToIgnore></fieldsToIgnore>
+    <fieldsToHide></fieldsToHide>
+    <customLabels></customLabels>
+  </bll>
+  <membership enabled="false" providerName="System.Data.SqlClient" connectionString="" windowsAuthentication="false" activeDirectory="false" customSecurity="true" dedicatedLogin="false" displayRememberMe="true" rememberMeSet="true" displaySignUp="false" displayPasswordRecovery="false" displayMyAccount="false" displayHelp="true" idleUserDetectionTimeout="-1" tabViewSelection="2" validationKey="0042DD859F3BBAA43B47D318AE703343D4B9C48B264342B5E764ADC39DB689516D53ED7A2DCBE826B749D9B64C8FFD817B8A974E71F5E69E39F57F26F76B0E22">
+    <adConfig></adConfig>
+    <config>table Users = Users 
+column [int|uiid] UserID = UserID 
+column [text] UserName = UserName 
+column [text] Password = Password 
+column [text] Email = Email 
+column [text] Comment = Comment 
+column [text] PasswordQuestion = PasswordQuestion 
+column [text] PasswordAnswer = PasswordAnswer 
+column [bool] IsApproved = IsApproved 
+column [date] LastActivityDate = LastActivityDate 
+column [date] LastLoginDate = LastLoginDate 
+column [date] LastPasswordChangedDate = LastPasswordChangedDate 
+column [date] CreationDate = CreationDate 
+column [bool] IsLockedOut = IsLockedOut 
+column [date] LastLockedOutDate = LastLockedOutDate 
+column [int]  FailedPasswordAttemptCount = FailedPasswordAttemptCount 
+column [date] FailedPasswordAttemptWindowStart = FailedPasswordAttemptWindowStart 
+column [int]  FailedPasswordAnswerAttemptCount = FailedPasswordAnswerAttemptCount 
+column [date] FailedPasswordAnswerAttemptWindowStart = FailedPasswordAnswerAttemptWindowStart
+
+table Roles = Roles 
+column [int|uiid] RoleID = RoleID 
+column [text] RoleName = RoleName 
+
+table UserRoles = UserRoles 
+column [int|uiid] UserID = UserID 
+column [int|uiid] RoleID =  RoleID
+</config>
+  </membership>
+  <globalization uiCulture="en-GB" culture="en-NZ" enableClientBasedCulture="false" supportedCultures="en-NZ,en-GB; " googleTranslateApiKey="" />
+  <layout name="Classic" menuStyle="MultiLevel" />
+  <theme name="Light" />
+</project>

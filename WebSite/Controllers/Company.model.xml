@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="tCompany" alias="tCompany" created="2016-08-24T15:12:37" modified="2016-08-24T15:12:48" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column fieldName="CompanyID" name="CompanyID" label="Company ID" />
+    <column fieldName="CompanyName" name="CompanyName" label="Company Name" />
+    <column fieldName="ConnectionString" name="ConnectionString" label="Connection String" />
+    <column fieldName="CreatedBy" name="CreatedBy" label="Created By" />
+    <column fieldName="CreatedOn" name="CreatedOn" label="Created On" format="g" />
+    <column fieldName="ModifiedBy" name="ModifiedBy" label="Modified By" />
+    <column fieldName="ModifiedOn" name="ModifiedOn" label="Modified On" format="g" />
+  </columns>
+</dataModel>
